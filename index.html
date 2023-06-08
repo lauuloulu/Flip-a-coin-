@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip a coin!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="container">
+    
+        <div class="coin" id="coin">
+          <div class="cara">
+              <img src="./assets/images/atena.png" alt="">
+          </div>
+          <div class="cruz">
+              <img src="./assets/images/lechuza.png" alt="">
+          </div>
+        </div>
+
+        <div class="stats">
+           <p id="contar-cara">Cara: 0</p>
+           <p id="contar-cruz">Cruz: 0</p>
+        </div>
+    
+
+        <div class="buttons">
+            <button id="flipButton">Gira</button>
+               <audio src="assets/sound/coin-flip-shimmer-85750.mp3" id="coin"></audio>
+            <button id="resetButton">Reset</button>
+        </div>
+
+    </div>  
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

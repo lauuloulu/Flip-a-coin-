@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+    background: #909394;
+}
+
+.container{
+    background:  #fbfdfe;
+    width: 400px;
+    padding: 35px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 15px 30px 35px rgba(0,0,0,0.1);
+}
+
+.coin{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 32px auto;
+transform-style: preserve-3d;
+}
+
+.coin img{
+   width: 100%; 
+}
+
+.cara, .cruz{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cara{
+    transform: rotateX(180deg);
+}
+
+@keyframes spin-cara {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+
+}
+@keyframes spin-cruz {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+    
+}
+
+.stats{
+    display: flex;
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+
+.stats p:nth-last-child(1){
+    margin-left: 50%;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#flipButton{
+    background: #f2ce04e1;
+    color: black;
+}
+
+#flipButton:disabled{
+    background-color: grey;
+    border-color:antiquewhite ;
+    color: black;
+}
+
+#resetButton{
+    background: green;
+    color: black;
+}
